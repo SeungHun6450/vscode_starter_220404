@@ -1,0 +1,10 @@
+div {
+  /* 1. */
+  /* color: red;
+  font-size: 100px; */
+
+  /* 2. */
+  width: 200px;
+  height: 200px;
+  background: url("../images/logo.png");
+}
