@@ -1,0 +1,34 @@
+.clearfix::after {
+  /* 법용화를 위해 만들어 놓은 class */
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.news {
+  width: 600px;
+  margin: 0 auto;
+  padding-top: 70px;
+}
+.news img {
+  /* 이미지 조절을 하려면 한쪽 길이만 적어라 */
+  height: 200px;
+  /* float은 left, right만 사용할 수 있다. */
+  float: left;
+}
+
+.container::after {
+  /* inline 속성을 가지고 있다. */
+  content: "";
+  display: block;
+  /* float이랑 대응되는 속성, float과 clear는 같이 사용한다. both, left, right 사용 가능*/
+  clear: both;
+}
+.container div {
+  width: 100px;
+  height: 100px;
+  margin: 20px;
+  background-color: orange;
+  /* 부작용이 있어 clear를 같이 사용해야 한다. */
+  float: left; 
+}

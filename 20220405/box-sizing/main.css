@@ -1,0 +1,16 @@
+
+.box1 {
+  /* 크기 계산 */
+  width: 100px;
+  height: 100px;
+  background-color: orange;
+  box-sizing: border-box;
+  padding: 20px;
+  border: 20px solid red;
+}
+
+.box2 {
+  width: 100px;
+  height: 100px;
+  background-color: orange;
+}
