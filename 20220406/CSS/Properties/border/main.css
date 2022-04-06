@@ -1,0 +1,19 @@
+/* border */
+/* .container .item {
+  width: 100px;
+  height: 100px;
+  background-color: orange;
+}
+.container .item:first-child {
+  border: 10px solid blue;
+  border: 10px dotted blue;
+} */
+
+/* boder-radius */
+div {
+  width: 100px;
+  height: 100px;
+  background-color: orange;
+  margin: 20px;
+  border-radius: 20px;
+}

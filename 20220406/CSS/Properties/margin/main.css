@@ -1,0 +1,30 @@
+/* .container {
+
+}
+.container .item {
+  width: 100px;
+  height: 100px;
+  background-color: orange;
+  margin: -20px 10px;
+} */
+/* margin collapsing  */
+/* .margin {
+  width: 100px;
+  height: 100px;
+  background-color: royalblue;
+  margin: 20px;
+} */
+
+/* margin collapsing  inheirt*/
+.parent {
+  width: 200px;
+  height: 200px;
+  background-color: aqua;
+}
+
+.child {
+  width: 100px;
+  height: 100px;
+  background-color: blanchedalmond;
+  margin-top : 20px;
+}

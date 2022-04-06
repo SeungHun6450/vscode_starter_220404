@@ -1,0 +1,40 @@
+/* display */
+
+
+/* display-cover */
+body {
+  height: 3000px;
+}
+
+.cover {
+  width: 200px;
+  height: 100px;
+  background-color: orange;
+  background-image: url("https://lh3.googleusercontent.com/a-/AOh14Gh3NAt9w6TRMsT4XFLbejYdBGeqw1ixd6BqEI_3kg=s360-p-rw-no");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+/* display-contain */
+.contain {
+  width: 200px;
+  height: 100px;
+  background-color: orange;
+  background-image: url("https://lh3.googleusercontent.com/a-/AOh14Gh3NAt9w6TRMsT4XFLbejYdBGeqw1ixd6BqEI_3kg=s360-p-rw-no");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.size{
+  /* width: 200px; */
+  height: 500px;
+  background-color: orange;
+  background-image: url("https://lh3.googleusercontent.com/a-/AOh14Gh3NAt9w6TRMsT4XFLbejYdBGeqw1ixd6BqEI_3kg=s360-p-rw-no");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  /* background-attachment: scroll; */
+  background-attachment: fixed;
+}
