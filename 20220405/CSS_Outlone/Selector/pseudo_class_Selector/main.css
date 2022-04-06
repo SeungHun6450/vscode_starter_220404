@@ -1,0 +1,70 @@
+.box {
+  width: 100px;
+  height: 100px;
+  background-color: orange;
+  transition: 1s;
+}
+.box:hover {
+  width: 300px;
+  background-color: royalblue;
+}
+
+/* 선택자요소에 마우스 커서가 올라가 있는 동안 선택 */
+a:hover {
+  color: red;
+}
+
+/* 선택자요소에 마우스를 클릭하고 있는 동안 선택 */
+a:active {
+  color: red;
+}
+
+/* ABC:focus : 선택자 ABC요소가 포커스 되면 선택
+Focus가 될 수 있는 요소는 HTML 대화형 콘텐츠가 해당된다.
+INPUT, A , BUTTON, LABEL, SELECT 등 여러 요소가 있으며 tabindex 속성을 사용한 요소도 FOCUS가 가능하다. tabindex="-1"을 추가해주면 동작이 가능해진다. */
+
+input:focus {
+  background-color: orange;
+}
+.box:focus {
+  width: 300px;
+  background-color: royalblue;
+}
+
+/* 선택자가 형제 요소 중 첫째라면 선택. */
+.fruits span:first-child {
+  color: red;
+}
+
+/* 선택자가 형제 요소 중 막내라면 선택. */
+.fruits h3:last-child {
+  color: red;
+}
+
+/* 선택자가 형제 요소 중 (n)째라면 선택.
+여러 경우를 만들 수 있다. ex) 숫자, 2n(2의 배수), 2n+1(홀수)... */
+/* .fruits *:nth-child(2) {
+  color: red;
+} */
+/* .fruits *:nth-child(2n) {
+  color: red;
+} */
+.fruits *:nth-child(2n+1) {
+  color: red;
+}
+/* 선택자가 아닌 다른 요소 선택 */
+.fruits *:not(span) {
+  color: red;
+}
+
+
+
+
+
+
+
+
+
+
+
+

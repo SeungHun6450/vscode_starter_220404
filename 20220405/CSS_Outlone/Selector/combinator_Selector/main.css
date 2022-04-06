@@ -1,0 +1,24 @@
+/* 일치 선택자(Basic Combinator), 선택자 두개를 동시에 만족하는 요소 선택,tag선택자를 사용해야 한다면 항상 맨 앞에 적고 뒤에 id나 class 선택자를 사용해야한다. */
+span.orange {
+  color: red;
+}
+
+/* 자식 선택자, 선택자의 자식요소 선택 */
+ul > .orange {
+  color: red;
+}
+
+/* 하위(후손)선택자, 선택자의 하위요소 선택, '띄어쓰기'가 선택자의 기호! (공백문자) */
+div .orange {
+  color: blue;
+}
+
+/* 인접 형제 선택자(Adjacent Sibling Combinator), 선택자의 다음 형제 요소 하나를 선택 */
+.orange + li {
+  color: green;
+}
+
+/* 일반 형제 선택자(General Sibling Combinator), 선택자의 다음 형제 요소 모두 선택 */
+.orange ~ li {
+  color: orange;
+}

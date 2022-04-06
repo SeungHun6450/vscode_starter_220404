@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css">
+  <link rel="stylesheet" href="main.css">
+  <title>Document</title>
+</head>
+<body>
+  <!--
+    상속되는 CSS 속성들 : 모두 글자/문자 관련 속성들!(모든 글자/문자 속성은 아니다)
+
+    font-style : 글자 기울기
+    font-weight : 글자 두께
+    font-size : 글자 크기
+    line-height : 줄 높이
+    font-family : 폰트(서체)
+    color : 글자 색상
+    text-align : 정렬-->
+  <div class="ecosystem">생태계
+    <div class="animal">동물
+      <div class="tiger">호랑이</div>
+      <div class="lion">사자</div>
+      <div class="elephant">코끼리</div>
+    </div>
+    <div class="plant">식물</div>
+  </div>
+
+
+  <!-- 강제 상속 : inherit을 사용하여 상속되지 않는 속성을 강제로 상속시킬 수 있다. -->
+  <div class="parent">
+    <div class="child"></div>
+  </div>
+
+  <!-- 선택자 우선순위 -->
+  <!-- 
+        !important : 무한대
+        인라인 : 1000점(쓸데없이 점수가 높으므로 사용하지 말것)
+        (#)id 선택자 : 100점
+        (.)class 선택자 : 10점
+        tag 선택자 : 1점
+        ★ 선언이 여러개가 됐을 경우 모든 점수를 합산하여 계산하면 된다. -->
+
+</body>
+</html>

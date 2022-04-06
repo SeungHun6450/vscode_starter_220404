@@ -1,0 +1,19 @@
+/* 전체 선택자, 모든 요소를 선택 */
+* {
+  color: red;
+}
+
+/* 태그 선택자(Type Selector)*/
+li {
+  color: blue;
+}
+
+/* 클래스 선택자(Class Selector) */
+.orange {
+  color: orange;
+}
+
+/* 아이디 선택자(ID Selector) */
+#orange {
+  color: pink;
+}

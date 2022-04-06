@@ -1,0 +1,6 @@
+@import url("./box.css");
+
+div {
+  color: red;
+  margin: 20px;
+}

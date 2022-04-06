@@ -1,0 +1,10 @@
+
+/* 선택자 요소의 내부 앞에 내용(Content)을 삽입 */
+.box::before {
+  content: "앞!";
+}
+
+/* 선택자 요소의 내부 뒤에 내용(Content)을 삽입 */
+.box::after {
+  content: "뒤!";
+}
