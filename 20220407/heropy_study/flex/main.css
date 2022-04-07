@@ -1,0 +1,78 @@
+.container {
+  height: 400px;
+  margin: 30px;
+  border: 2px solid red;
+  display: flex;
+
+
+  /* Flex Container */
+  /* 수평 정렬 방법 */
+  /* justify-content: flex-start; */
+  /* justify-content: center; */
+  /* justify-content: flex-end; */
+  /* justify-content: space-between; */
+  /* justify-content: space-around; */
+
+  /* 수직 정렬 방법 */
+  /* align-items: flex-start; */
+  /* align-items: center; */
+  /* align-items: flex-end; */
+
+  /* item이 두줄 이상일 때 */
+  /* flex-wrap: wrap; */
+  /* 기본 값: stretch 쭉 늘려라 */
+  /* align-content: flex-start; */
+  /* align-content: center; */
+  /* align-content: flex-end; */
+  /* align-content: space-between; */
+  /* align-content: space-around; */
+
+  /* item이 한 줄 일때 */
+  /* align-items: flex-start; */
+  /* align-items: center; */
+  /* align-items: flex-end; */
+
+} 
+.item {
+  width: 100px;
+  height: 100px;
+  border: 2px solid;
+  font-size: 40px;
+  flex-grow: 1;
+  /* 설정한 값을 기본 너비로 설정.0은 기본너비 없음. 기본 값은 auto */
+  flex-basis: 0;
+}
+/* Flex-grow : 기본너비(auto면 글씨영역)를 제외한 남은 영역을 비율로 계산해 지정*/
+.item:nth-child(2) {
+  flex-grow: 2;
+}
+
+/* Flex Items */
+/* .item:nth-child(4) { */
+  /* 숫자가 크면 클수록 뒤로 밀림, 구조적으로는 원래 위치에 존재
+  , 보이는 순서만 바꿔주는 것, 음수 사용 가능 */
+  /* order: 1; */
+  
+  /* flex-shrink: 1이면 모양이 넘치는 경우 찌그러지는데 0이면 찌그러지지 않는다 */
+  /* flex-shrink: 0; */
+/* } */
+
+
+
+/* =------------------------------ */
+body{
+  padding: 20px;
+}
+.search {
+  /* border: 2px solid red; */
+  display: flex;
+}
+.search .input {
+  height: 50px;
+  flex-grow: 1;
+}
+.search .search-btn {
+  height: 50px;
+  margin-left: 10px;
+  flex-shrink: 0;
+}

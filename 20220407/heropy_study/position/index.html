@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css">
+  <link rel="stylesheet" href="main.css">
+  <title>Document</title>
+</head>
+<body>
+  <!-- position : static(기본 값), relative, absolute, fixed, sticky:가장 가까운 조상의 scrollbox기준 -->
+  <!-- sticky
+  - 가장 가까운 조상 스크롤 박스에 달라붙는다.
+  - 가장 가까운 블록 요소인 조상(보통은 부모) 요소 범위 안에서만 움직인다.
+ -->
+  <div class="grand">
+    <div class="parent">
+      <div class="child c1"></div>
+      <div class="child c2"></div>
+    </div>
+    <div class="parent"></div>
+  </div>
+</body>
+</html>
