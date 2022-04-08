@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <!-- 1. Underscore으로 상태를 표시하는 방법
+  후손 선택자로 .name을 사용할 경우 .item 아래에
+  내가 원하지 않은 style이 적용될 수 있기 때문에 BEM방식으로 수정해준다. -->
+  <div class="container">
+    <div class="name">
+      <div class="item">
+        <div class="name"></div>
+      </div>
+    </div>
+  </div>
+
+  <!--BEM 방식으로 수정-->
+  <div class="container">
+    <div class="container__name">
+      <div class="item">
+        <div class="item__name"></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 2. Hypen으로 상태를 표시하는 방법
+  버튼에 종속되어 있는 느낌이 없고 별개의 단어로 보이기 때문에 BEM 방식으로 수정해준다. -->
+  <div class="btn primary"></div>
+  <div class="btn success"></div>
+  <div class="btn error"></div>
+
+  <!--BEM 방식으로 수정-->
+  <div class="btn btn--primary"></div>
+  <div class="btn btn--success"></div>
+  <div class="btn btn--error"></div>
+
+
+</body>
+</html>
