@@ -412,7 +412,7 @@ header .badges .badge{
   left: 0;
   right: 0;
 }
-.notice .promotion .swiper-pagination-bullet  {
+.notice .promotion .swiper-pagination .swiper-pagination-bullet  {
   background-color: transparent;
   background-image: url("../images/promotion_slide_pager.png");
   width: 12px;
@@ -420,10 +420,10 @@ header .badges .badge{
   margin-right: 6px;
   outline: none;
 }
-.notice .promotion .swiper-pagination-bullet:last-child  {
+.notice .promotion .swiper-pagination .swiper-pagination-bullet:last-child  {
   margin-right: 0;
 }
-.notice .promotion .swiper-pagination-bullet-active  {
+.notice .promotion .swiper-pagination .swiper-pagination-bullet-active  {
   background-image: url("../images/promotion_slide_pager_on.png");
 }
 .notice .promotion .swiper-prev,
