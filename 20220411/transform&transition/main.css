@@ -1,0 +1,19 @@
+img {
+  display: block;
+}
+
+.container {
+  width: min-content;
+  background-color: royalblue;
+  perspective: 600px;
+}
+.container img {
+  display: block;
+  /* original 요소에 duration을 사용하자!, 중복 부여x */
+  transition-duration: 1s;
+  /* 변환의 기준점 x, y축 */
+  transform-origin: 100% 0%;
+}
+.container:hover img {
+  transform: rotate(45deg);
+}
