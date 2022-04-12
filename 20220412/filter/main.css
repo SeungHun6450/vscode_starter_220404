@@ -1,0 +1,45 @@
+img {
+  /* img가 inline 요소 이기때문에 border를 사용할 경우 빈 여백이 나온다
+  이를 해결하기 위해 block을 선언해준다. */
+  display: block;
+}
+.container {
+  border: 4px solid;
+  /* 밑의 세 속성을 사용하게 되면 가로가 최대한 작아지려 한다. */
+  /* position: fixed; */
+  /* position: absolute; */
+  width: min-content;
+/* <filter-function> 값 */
+/* filter: blur(5px);
+filter: brightness(0.4);
+filter: contrast(120%);
+filter: drop-shadow(10px 20px 0 rgb(0, 0, 0));
+filter: grayscale(50%);
+filter: hue-rotate(90deg);
+filter: invert(75%);
+filter: opacity(25%);
+filter: saturate(30%); */
+filter: sepia(100%);
+
+/* 다중 값 */
+/* filter: contrast(175%) brightness(3%); */
+
+/* 필터 없음 */
+/* filter: none; */
+
+/* 전역 값 */
+/* filter: inherit;
+filter: initial;
+filter: unset; */
+}
+
+/* backdrop-filter : 요소의 뒷 배경을 filter처리 하는 방법 */
+.container .filter {
+  width: 200px;
+  height: 100px;
+  border: 4px solid;
+  position: absolute;
+  top: 50px;
+  left: 100px;
+  backdrop-filter: blur(3px);
+}
