@@ -1,0 +1,20 @@
+body {
+  padding: 30px;
+}
+.container {
+  padding: 20px;
+  border: 4px solid;
+  /* 단의 가로 너비 */
+  column-width: 100px;
+  /* 단의 개수 */
+  column-count: 2;
+  /* 단의 간격, 기본값: normal(1em:자신의 폰트 크기)*/
+  column-gap: 30px;
+  /* border와 비슷한 개념, 선의두께, 종류, 색상 */
+  column-rule: 4px solid;
+  /* 구분 선까지 색이 바뀜 */
+  color: blue;
+  /* 단축속성이용 :
+    columns: 100px 2;
+  */
+}

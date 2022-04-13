@@ -1,0 +1,17 @@
+img {
+  display: block;
+}
+.container {
+  width: min-content;
+  background-color: royalblue;
+  perspective: 600px;
+  perspective-origin: 50% 0%;
+}
+.container img {
+  /* 변환 기준점 */
+  /* transform-origin: 100% 0%; */
+  transition-duration: 1s;
+}
+.container:hover img {
+  transform: rotateY(45deg);
+}

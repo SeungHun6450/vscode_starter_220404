@@ -1,0 +1,36 @@
+img {
+  display: block;
+}
+.container {
+  width: min-content;
+  background-color: royalblue;
+  perspective: 600px;
+}
+.container img {
+  transition-duration: 1s;
+  /* Animation */
+  /* animation-name: rolling;
+  animation-duration: 2s;
+  animation-timing-function: ㅣlinear;
+  animation-delay: 0s;
+  animation-iteration-count: infinite;
+  animation-direction: reverse;
+  animation-fill-mode: none;
+  animation-play-state: running; */
+  animation: rolling 1s linear 2 alternate-reverse ;
+}
+.container:hover img {
+  /* transform: rotateY(45deg); */
+  animation-play-state: paused;
+}
+
+@keyframes rolling {
+	0% {
+    	transform: translateX(0);
+    }
+    23% {
+    }
+    100% {
+    	transform: translateX(100px);
+    }
+}
