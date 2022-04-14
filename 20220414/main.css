@@ -1,0 +1,65 @@
+/* 인코딩 방식 */
+@charset "UTF-8";
+
+/* url로 import(연셜) */
+@import url('');
+
+/* C애니메이션에서 구간을 정하고 각 구간별로 어떤 스타일을 적용시킬지 정하는 문법 */
+@keyframes rolling{
+  0% {
+    /* 속성 */
+  }
+  100% {
+    /* 속성 */
+  }
+}
+
+
+/* 2. 변수, var로 해야 호출 가능 */
+/* :root { */
+  /* html === :root(가상클래스선택자) */
+.group1  {
+  /* group1 영역에서만 선언된 변수 이므로 아래처럼 사용을 해도 group1의 box에서만 적용 됨 */
+  --primary: orange;
+  --danger: green;
+}
+
+.box {
+  width: 100px;
+  height: 200px;
+  /* background-color: var(--primary); */
+  background-color: var(--danger, red);
+  margin: 20px;
+  border: 4px solid;
+}
+/* 반응형 (레이아웃)웹사이트를 만들 때 @media 사용 */
+/* 
+1.
+@media 타입 and (기능)
+타입은 여러가지가 있다.
+기본 값 : all , 안적어도 가능
+screen, print, tv ...
+@media (기능)
+@media (기능) and (기능)
+*/
+/* .box {
+  width: 100px;
+  height: 100px;
+  background-color: orange;
+} */
+/* 1. 600 이하이거나 800 이상일 때 적용, or을 하려면 not을 사용해야한다 */
+/* @media not all and (max-width: 600px) and (min-width: 800px) { */
+
+  /* 2. 세로너비가 더 길 때 */
+  /* @media (orientation: portrait) { */
+  
+  /* 3. 가로 너비가 더 길 때 */
+  /* @media (orientation: landscape) { */
+
+
+    
+  /* .box {
+    width: 300px;
+    background-color: royalblue;
+  }
+} */
